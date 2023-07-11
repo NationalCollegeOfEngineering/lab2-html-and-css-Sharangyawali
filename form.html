@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form autocomplete="off">
+        <fieldset>
+            <legend>Fill out the form</legend>
+        <label for="fname">FirstName:</label><br/>
+        <input type="text" name="fname" id="fname" placeholder="Your first name" autofocus required><br/>
+        <label for="lname">LastName:</label><br/>
+        <input type="text" name="lname" id="lname" placeholder="Your last name" required>
+        <br/>
+        <label for="email">Email</label><br/>
+        <input type="email" name="enail" id="email" placeholder="Enter your email" required>
+        <br/>
+        <label for="gender">Gender</label><br/>
+        <input type="radio" name="gender" value="male" checked>Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other
+        <br/>
+        <label for="dob">Date of Birth</label><br/>
+        <input type="date" name="dob" id="dob" required>
+        <br/>
+        <label>Select any two</label>
+        <input type="checkbox" name="subject" value="Web">Web
+        <input type="checkbox" name="subject" value="networking">Networking
+        <input type="checkbox" name="subject" value="graphics">Graphics
+        <input type="checkbox" name="subject" value="python">Python
+        <br/>
+        <label for="districts">Districts</label>
+        <select name="district" id="districts">
+            <option value="kathmandu">Kathmandu</option>
+            <option value="bhaktapur">Bhaktapur</option>
+            <option value="lalitpur">Lalitpur</option>
+            <option value="rupendehi">Rupendehi</option>
+            <option value="kaski">Kaski</option>
+        </select>
+        <br/>
+        <label for="zip">Zip</label><br/>
+        <input type="number" name="zip" id="zip" max="20" min="0">
+        <br/>
+        <label for="upload">Image Upload</label>
+        <input type="file" multiple name="upload" id="upload" accept="image/*">
+        <br/>
+        <label for="msg">Message</label>
+        <br/>
+        <textarea name="msg" id="msg" cols="20" rows="5"></textarea>
+        <br/>
+        <input type="hidden" name="user" value="user">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        <br/>
+        <input type="search" name="search" id="search" placeholder="Search" disabled>
+        <br/>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </fieldset>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,15 @@
+table,th,td{
+    border: 2px solid; 
+}
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+h3{
+    font-family:cursive;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
